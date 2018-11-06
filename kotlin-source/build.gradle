@@ -14,7 +14,7 @@ apply plugin: 'net.corda.plugins.quasar-utils'
 
 
 dependencies {
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
 
     cordaCompile "$corda_release_group:corda-core:$corda_release_version"
     cordaCompile "$corda_release_group:corda-finance:$corda_release_version"
@@ -27,5 +27,6 @@ dependencies {
 cordapp{
     info{
         targetPlatformVersion = "4"
+        vendor = "stefano.franz@r3.com"
     }
 }
